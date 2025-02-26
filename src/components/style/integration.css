@@ -1,0 +1,176 @@
+
+
+/* Tech Content Styles */
+.tech-title {
+    color: #F8F8F8;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    transition: color 0.3s ease;
+  }
+  
+  .tech-description {
+    color: rgba(248, 248, 248, 0.7);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  /* Entrance Animation */
+  @keyframes fadeInScale {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .tech-card {
+    animation: fadeInScale 0.6s ease-out forwards;
+    opacity: 0;
+  }
+  
+  /* Staggered Animation Delays */
+  .tech-card:nth-child(1) { animation-delay: 0.1s; }
+  .tech-card:nth-child(2) { animation-delay: 0.2s; }
+  .tech-card:nth-child(3) { animation-delay: 0.3s; }
+  .tech-card:nth-child(4) { animation-delay: 0.4s; }
+  .tech-card:nth-child(5) { animation-delay: 0.5s; }
+  .tech-card:nth-child(6) { animation-delay: 0.6s; }
+  .tech-card:nth-child(7) { animation-delay: 0.7s; }
+  .tech-card:nth-child(8) { animation-delay: 0.8s; }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .tech-card {
+      height: auto;
+      min-height: 250px;
+      margin-bottom: 1.5rem;
+    }
+    
+    .tech-stack-section {
+      padding: 4rem 0;
+    }
+  }
+  
+  /* Integrations Section Styles */
+  .integrations-section {
+    background-color: #202020;
+    padding: 8rem 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Integration Card Styles */
+  .integration-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.8px);
+    -webkit-backdrop-filter: blur(4.8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    height: 300px;
+    position: relative;
+    transition: all 0.4s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Integration Icon Wrapper */
+  .integration-icon-wrapper {
+    width: 70px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    position: relative;
+    transition: all 0.4s ease;
+  }
+  
+  .integration-icon-wrapper svg {
+    font-size: 2rem;
+    color: var(--icon-color);
+    transition: all 0.4s ease;
+  }
+  
+  /* Card Hover Effects */
+  .integration-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.08);
+  }
+  
+  .integration-card:hover .integration-icon-wrapper {
+    transform: rotate(10deg);
+    background: var(--icon-color);
+  }
+  
+  .integration-card:hover .integration-icon-wrapper svg {
+    color: #ffffff;
+    transform: rotate(-10deg);
+  }
+  
+  /* Integration Content */
+  .integration-title {
+    color: #F8F8F8;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    transition: color 0.3s ease;
+  }
+  
+  .integration-description {
+    color: rgba(248, 248, 248, 0.7);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  /* Entrance Animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .integration-card {
+    animation: fadeInUp 0.6s ease-out forwards;
+    opacity: 0;
+  }
+  
+  /* Staggered Animation Delays */
+  .integration-card:nth-child(1) { animation-delay: 0.1s; }
+  .integration-card:nth-child(2) { animation-delay: 0.2s; }
+  .integration-card:nth-child(3) { animation-delay: 0.3s; }
+  .integration-card:nth-child(4) { animation-delay: 0.4s; }
+  .integration-card:nth-child(5) { animation-delay: 0.5s; }
+  .integration-card:nth-child(6) { animation-delay: 0.6s; }
+  .integration-card:nth-child(7) { animation-delay: 0.7s; }
+  .integration-card:nth-child(8) { animation-delay: 0.8s; }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .integration-card {
+      height: auto;
+      min-height: 220px;
+      margin-bottom: 1.5rem;
+    }
+    
+    .integrations-section {
+      padding: 4rem 0;
+    }
+  }

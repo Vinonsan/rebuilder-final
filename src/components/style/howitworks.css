@@ -1,0 +1,491 @@
+/* Features Section Background */
+/* Features Section */
+.features-section {
+  background-color: #0f0f0f;
+  padding: 8rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Floating Shapes Inside Section */
+.features-section .floating-shape {
+  position: absolute;
+  background: rgb(51, 116, 24);
+  filter: blur(2px);
+  animation: floatAnimation 3s infinite alternate ease-in-out, rotateAnimation 10s linear infinite;
+  z-index: 0;
+}
+
+/* Round Shapes */
+.features-section .shape-1 {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  top: 10%;
+  left: 10%;
+}
+
+.features-section .shape-2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  top: 70%;
+  left: 75%;
+  animation-duration: 10s;
+}
+
+/* Square Shapes */
+.features-section .shape-3 {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  top: 40%;
+  left: 50%;
+  animation-duration: 12s;
+}
+
+.features-section .shape-4 {
+  width: 90px;
+  height: 90px;
+  border-radius: 8px;
+  top: 60%;
+  left: 20%;
+  animation-duration: 9s;
+}
+
+/* More Floating Shapes */
+.features-section .shape-5 {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  top: 15%;
+  left: 80%;
+  animation-duration: 11s;
+}
+
+.features-section .shape-6 {
+  width: 110px;
+  height: 110px;
+  border-radius: 12px;
+  top: 75%;
+  left: 5%;
+  animation-duration: 13s;
+}
+
+/* Floating Animation */
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    transform: translateY(-30px) translateX(30px);
+  }
+}
+
+/* Rotate animation */
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Feature Card Styles with Gradient Border */
+.feature-card {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.8px);
+  -webkit-backdrop-filter: blur(4.8px);
+  padding: 2.5rem;
+  position: relative;
+  margin-bottom: 2rem;
+  height: 350px; /* Adjust as needed */
+  border-radius: 16px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  border-image: linear-gradient(135deg, #5DD62C, #202020, #202020) 5;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: cardEnter 1s forwards ease-in-out; /* Added enter animation */
+}
+
+/* Animation for Cards entering the screen */
+@keyframes cardEnter {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Feature Content Styles */
+.feature-content {
+  position: relative;
+  z-index: 2;
+}
+
+.feature-icon {
+  font-size: 2.8rem;
+  color: #5DD62C;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.feature-icon:hover {
+  transform: scale(1.2);
+  color: #F8F8F8;
+}
+
+.feature-title {
+  color: #F8F8F8;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.feature-description {
+  color: rgba(248, 248, 248, 0.7);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Section Header Styles */
+.section-header {
+  margin-bottom: 4rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: headerEnter 1s forwards ease-in-out; /* Added header enter animation */
+}
+
+/* Header Animation */
+@keyframes headerEnter {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  letter-spacing: -0.5px;
+}
+
+.animated-underline {
+  width: 150px;
+  height: 4px;
+  background: var(--primary-color);
+  margin: 1rem auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.animated-underline::after {
+  content: '';
+  position: absolute;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(51, 116, 24, 0.8), transparent);
+  animation: underline-shine 2s infinite;
+}
+
+@keyframes underline-shine {
+  100% {
+    left: 100%;
+  }
+}
+
+.section-description {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Add floating shapes in background */
+.features-section::before,
+.features-section::after {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: #0f0f0f;
+  z-index: 0;
+  animation: floatBackground 8s ease-in-out infinite;
+}
+
+.features-section::before {
+  top: -150px;
+  right: -150px;
+}
+
+.features-section::after {
+  bottom: -150px;
+  left: -150px;
+}
+
+/* Floating background animation */
+@keyframes floatBackground {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(50px, -50px);
+  }
+}
+
+/* Animated Icon */
+.animated-icon-container {
+display: inline-block;
+margin-right: 10px;
+}
+
+.animated-icon {
+font-size: 2rem;
+color: #5DD62C;
+animation: rotateIcon 2s linear infinite;
+}
+
+@keyframes rotateIcon {
+0% {
+  transform: rotate(0deg);
+}
+100% {
+  transform: rotate(360deg);
+}
+}
+
+
+
+
+  
+
+/* How It Works Section Styles */
+.how-it-works-section {
+  background-color: #202020;
+  padding: 8rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background Pattern */
+.how-it-works-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(93, 214, 44, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(93, 214, 44, 0.05) 0%, transparent 50%);
+  opacity: 0.7;
+}
+
+/* Step Card Styles */
+.step-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.8px);
+  -webkit-backdrop-filter: blur(4.8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2.5rem;
+  position: relative;
+  height: 350px;
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+
+/* Step Number */
+.step-number {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  background: #EEEEEE;
+  color: #337418;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  z-index: 2;
+}
+
+/* Step Icon Wrapper */
+.step-icon-wrapper {
+  margin: 2rem 0;
+  position: relative;
+  display: inline-block;
+}
+
+.step-icon {
+  font-size: 3rem;
+  color: #5DD62C;
+  position: relative;
+  z-index: 2;
+  animation: pulseIcon 2s infinite ease-in-out;
+}
+
+@keyframes pulseIcon {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Step Title */
+.step-title {
+  color: #F8F8F8;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  position: relative;
+}
+
+/* Step Description */
+.step-description {
+  color: rgba(248, 248, 248, 0.7);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Connector Line */
+.step-connector {
+  position: absolute;
+  top: 40px;
+  right: -50%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #5DD62C 0%, transparent 100%);
+  opacity: 0.3;
+}
+
+/* Card Hover Effects */
+.step-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 40px rgba(93, 214, 44, 0.1);
+}
+
+.step-card:hover .step-icon {
+  animation: none;
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+/* Animated Border */
+.step-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 0;
+  background: #5DD62C;
+  transition: height 0.4s ease;
+}
+
+.step-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #5DD62C;
+  transition: width 0.4s ease;
+}
+
+.step-card:hover::before {
+  height: 100%;
+}
+
+.step-card:hover::after {
+  width: 100%;
+}
+
+/* Entrance Animation */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.step-card {
+  animation: slideInUp 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+/* Staggered Animation Delays */
+.step-card:nth-child(1) { animation-delay: 0.1s; }
+.step-card:nth-child(2) { animation-delay: 0.2s; }
+.step-card:nth-child(3) { animation-delay: 0.3s; }
+.step-card:nth-child(4) { animation-delay: 0.4s; }
+.step-card:nth-child(5) { animation-delay: 0.5s; }
+.step-card:nth-child(6) { animation-delay: 0.6s; }
+
+/* Section Title Animation */
+.how-it-works-section .section-title {
+  position: relative;
+  display: inline-block;
+}
+
+.how-it-works-section .section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #5DD62C;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: titleUnderline 1s ease forwards;
+}
+
+@keyframes titleUnderline {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .step-connector {
+    display: none;
+  }
+  
+  .step-card {
+    margin-bottom: 2rem;
+    height: auto;
+    min-height: 300px;
+  }
+  
+  .how-it-works-section {
+    padding: 4rem 0;
+  }
+}
