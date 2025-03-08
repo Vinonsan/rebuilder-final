@@ -46,7 +46,7 @@ const TestimonialsSection = () => {
         <div className="section-header text-center" data-aos="fade-up">
           <h2 className="section-title">
           <span className="animated-icon-container">
-              <FaComments className="animated-icon" />
+              
           </span>
             What Our Users Say</h2>
           <div className="animated-underline"></div>

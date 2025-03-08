@@ -218,28 +218,7 @@
   line-height: 1.6;
 }
 
-/* Add floating shapes in background */
-.features-section::before,
-.features-section::after {
-  content: '';
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  background: #0f0f0f;
-  z-index: 0;
-  animation: floatBackground 8s ease-in-out infinite;
-}
 
-.features-section::before {
-  top: -150px;
-  right: -150px;
-}
-
-.features-section::after {
-  bottom: -150px;
-  left: -150px;
-}
 
 /* Floating background animation */
 @keyframes floatBackground {

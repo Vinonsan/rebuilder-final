@@ -83,7 +83,7 @@ const Dashboard = () => {
         <span>Back to Home</span>
       </Link>
 
-      <div className="dashboard-header animated-border">
+      <div className="dashboard-upper-header animated-border">
         <div className="header-icon-wrapper">
           <FaDatabase className="animated-icon" />
         </div>
@@ -92,8 +92,8 @@ const Dashboard = () => {
       </div>
 
       <Container fluid>
-        <Row className="status-bar mb-4 animated-border">
-          <div className="section-icon-wrapper">
+        <Row className="status-bar mb-4 mt-4 animated-border">
+          <div className="section-icon-wrapper mt-4">
             <FaHeartbeat className="animated-icon pulse" />
           </div>
           <Col>
@@ -116,29 +116,27 @@ const Dashboard = () => {
           </Col>
         </Row>
 
-        <div className="features-section animated-border">
-          <div className="section-icon-wrapper">
-            <FaChartBar className="animated-icon" />
-          </div>
-          <Row>
-            {features.map((feature, index) => (
-              <Col key={index} lg={4} md={6} className="mb-4">
-                <Card className="dashboard-card">
-                  <Card.Body>
-                    <div className="card-icon-wrapper">
-                      {feature.icon}
-                    </div>
-                    <Card.Title>{feature.title}</Card.Title>
-                    <Card.Text>{feature.description}</Card.Text>
-                    <div className={`status-badge ${feature.statusColor}`}>
-                      {feature.status}
-                    </div>
-                  </Card.Body>
-                </Card>
-              </Col>
-            ))}
-          </Row>
-        </div>
+        <div className="features-section dark-theme animated-border mt-4">
+  <Row>
+    {features.map((feature, index) => (
+      <Col key={index} lg={4} md={6} className="mb-4">
+        <Card className="dashboard-card dark-card">
+          <Card.Body>
+            <div className="card-icon-wrapper">
+              {feature.icon}
+            </div>
+            <Card.Title>{feature.title}</Card.Title>
+            <Card.Text>{feature.description}</Card.Text>
+            <div className={`status-badge ${feature.statusColor}`}>
+              {feature.status}
+            </div>
+          </Card.Body>
+        </Card>
+      </Col>
+    ))}
+  </Row>
+</div>
+
       </Container>
     </div>
   );

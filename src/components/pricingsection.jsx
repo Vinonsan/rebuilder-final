@@ -20,7 +20,7 @@ const PricingSection = () => {
   const plans = [
     { 
       title: 'Starter Plan', 
-      price: '0',
+      price: '19.99',
       period: 'per month',
       features: [
         'Basic AI templates',
@@ -34,7 +34,7 @@ const PricingSection = () => {
     },
     { 
       title: 'Standard Plan', 
-      price: '19.99',
+      price: '49.99',
       period: 'per month',
       features: [
         'Advanced AI customization',
@@ -48,7 +48,7 @@ const PricingSection = () => {
     },
     { 
       title: 'Ultimate Plan', 
-      price: '49.99',
+      price: '79.99',
       period: 'per month',
       features: [
         'Full AI capabilities',
