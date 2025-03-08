@@ -40,6 +40,7 @@
   transition: all 0.3s ease;
   position: relative;
   font-size: 1.1rem;
+  text-decoration: none;
 }
 
 .scrolled .nav-link {
@@ -77,6 +78,7 @@
   position: relative;
   overflow: hidden;
   z-index: 1;
+  text-decoration: none;
 }
 
 .nav-button::before {

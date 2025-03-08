@@ -21,14 +21,10 @@ const NavbarComponent = ({ scrolled }) => {
             <Nav.Link href="#integrations">Integration</Nav.Link>
             <Nav.Link href="#pricing">Pricing</Nav.Link>
           </Nav>
-          <Button 
-  variant="outline-light" 
-  size="sm" 
-  className="nav-button glow-animation" 
-  onClick={() => window.location.href = '/dashboard'}
->
-  Get Started
-</Button>
+          <div className="nav-button glow-animation">
+            <Link to="/dashboard" style={{ textDecoration: "none", color: "white" }}>Get Started</Link>
+          </div>
+        
 
         </Navbar.Collapse>
       </Container>

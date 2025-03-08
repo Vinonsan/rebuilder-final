@@ -13,7 +13,7 @@ const FeaturesSection = () => {
       <Container>
         <div className="section-header text-center" data-aos="fade-up">
         <div className="animated-icon-container">
-            <FaBolt className="animated-icon" />
+            
           </div>
           <h2 className="section-title">AI Special Features</h2>
           <div className="animated-underline"></div>

@@ -1,8 +1,11 @@
 // FooterSection.jsx
 import React from 'react';
+import { Link } from "react-router-dom";
 import { Container, Row, Col } from 'react-bootstrap';
-import { FaTwitter, FaLinkedin, FaGithub, FaInstagram, FaMapMarker, FaEnvelope, FaPhone, FaClock, FaShieldAlt, FaAward } from 'react-icons/fa';
-import './style/footer.css'
+import { FaTwitter, FaLinkedin,  FaMapMarker, FaEnvelope, FaPhone, FaClock, FaShieldAlt, FaAward, FaYoutube, FaLayerGroup, FaGlobe  } from 'react-icons/fa';
+import './style/footer.css';
+import { TbSquareF6 } from "react-icons/tb";
+
 const FooterSection = () => {
   return (
     <footer className="footer-section">
@@ -17,10 +20,11 @@ const FooterSection = () => {
 
                 </p>
                 <div className="social-links">
-                  <a href="#" className="social-link"><FaTwitter /></a>
-                  <a href="#" className="social-link"><FaLinkedin /></a>
-                  <a href="#" className="social-link"><FaGithub /></a>
-                  <a href="#" className="social-link"><FaInstagram /></a>
+                  <a href="https://x.com/Rebuild55276" className="social-link" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+                  <a href="https://www.linkedin.com/company/rebuildl/" className="social-link" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+                  <a href="https://www.youtube.com/@Rebuild-e8i" className="social-link" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
+                  <a href="https://www.f6s.com/company/rebuild-lk" className="social-link" target="_blank" rel="noopener noreferrer"><TbSquareF6 /></a>
+                  <a href="https://www.crunchbase.com/organization/rebuild-a0a7" className="social-link" target="_blank" rel="noopener noreferrer"><FaGlobe /></a>
                 </div>
               </div>
             </Col>
@@ -29,6 +33,7 @@ const FooterSection = () => {
               <div className="footer-links">
                 <h4>Quick Links</h4>
                 <ul>
+              
                   <li><a href="#features">Features</a></li>
                   <li><a href="#how-it-works">How It Works</a></li>
                   <li><a href="#pricing">Pricing</a></li>
@@ -42,10 +47,10 @@ const FooterSection = () => {
               <div className="footer-contact">
                 <h4>Contact Us</h4>
                 <div className="contact-info">
-                  <p><FaMapMarker className="contact-icon" /> 123 Innovation Street, Tech City</p>
-                  <p><FaEnvelope className="contact-icon" /> support@aiwebbuilder.com</p>
-                  <p><FaPhone className="contact-icon" /> +1 (555) 123-4567</p>
-                  <p><FaClock className="contact-icon" /> Mon - Fri: 9:00 AM - 6:00 PM</p>
+                  <p><FaMapMarker className="contact-icon" /> 152 Aluthmawatha Rd, Colombo 00015</p>
+                  <p><FaEnvelope className="contact-icon" /> support@rebuild.lk</p>
+                  <p><FaPhone className="contact-icon" /> 0112 423 162</p>
+                  {/* <p><FaClock className="contact-icon" /> Mon - Fri: 9:00 AM - 6:00 PM</p> */}
                 </div>
               </div>
             </Col>
@@ -83,9 +88,16 @@ const FooterSection = () => {
             </Col>
             <Col md={6}>
               <div className="footer-bottom-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Cookie Policy</a>
+                
+                
+                <div >
+                    <Link to="/privacy">Privacy Policy</Link>
+                </div>
+
+                <div >
+                    <Link to="/terms">Terms & conditions</Link>
+                </div>
+               
               </div>
             </Col>
           </Row>
