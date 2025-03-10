@@ -23,11 +23,11 @@ const TermsAndConditions = () => {
             }}>
               <Card.Body>
                 <h1 style={{ textAlign: 'center', marginBottom: '25px', color: '#00ff7f', fontSize: '2rem', fontWeight: 'bold' }}>Terms and Conditions</h1>
-                <p style={{ color: '#9e9e9e', textAlign: 'center', marginBottom: '20px', fontSize: '1rem' }}>Effective Date: [Insert Date]</p>
+                <p style={{ color: '#9e9e9e', textAlign: 'center', marginBottom: '20px', fontSize: '1rem' }}>Effective Date: 10 march 2025</p>
 
                 <h3 style={{ marginTop: '25px', fontSize: '1.4rem', fontWeight: '600', color: '#00ff7f' }}>1. Introduction</h3>
                 <p style={{ fontSize: '1rem', color: '#c8e6c9', lineHeight: '1.6' }}>
-                  Welcome to [Your Company Name]. By using our services, you agree to comply with and be bound by the following terms and conditions.
+                  Welcome to Rebuild. By using our services, you agree to comply with and be bound by the following terms and conditions.
                 </p>
 
                 <h3 style={{ marginTop: '25px', fontSize: '1.4rem', fontWeight: '600', color: '#00ff7f' }}>2. Use of Services</h3>
@@ -56,14 +56,18 @@ const TermsAndConditions = () => {
                   We reserve the right to update these terms at any time. Continued use of our services after changes indicates your acceptance of the new terms.
                 </p>
 
-                <h3 style={{ marginTop: '25px', fontSize: '1.4rem', fontWeight: '600', color: '#00ff7f' }}>6. Governing Law</h3>
-                <p style={{ fontSize: '1rem', color: '#c8e6c9', lineHeight: '1.6' }}>
-                  These terms are governed by the laws of [Your Jurisdiction]. Any disputes will be resolved in the courts of [Your Location].
-                </p>
+                <h3 style={{ marginTop: '25px', fontSize: '1.4rem', fontWeight: '600', color: '#00ff7f' }}>
+  6. Governing Law
+</h3>                 
+<p style={{ fontSize: '1rem', color: '#c8e6c9', lineHeight: '1.6' }}>
+  These terms are governed by the laws of Sri Lanka, where Rebuild is registered and operates.  
+  Any disputes arising from or relating to these terms will be resolved in the courts of Sri Lanka.  
+</p>
+
 
                 <h3 style={{ marginTop: '25px', fontSize: '1.4rem', fontWeight: '600', color: '#00ff7f' }}>7. Contact Us</h3>
                 <p style={{ fontSize: '1rem', color: '#c8e6c9', lineHeight: '1.6' }}>
-                  If you have any questions about our Terms and Conditions, please contact us at <strong>[Your Contact Email]</strong>.
+                  If you have any questions about our Terms and Conditions, please contact us at <strong>support@rebuild.lk</strong>.
                 </p>
 
                 <div style={{ textAlign: 'center', marginTop: '30px' }} ref={bottomRef}>

@@ -40,11 +40,11 @@ const PrivacyPolicy = () => {
             <Card style={styles.card}>
               <Card.Body>
                 <h1 style={styles.header}>Privacy Policy</h1>
-                <p style={styles.mutedText}>Effective Date: [Insert Date]</p>
+                <p style={styles.mutedText}>Effective Date: 10 march 2025</p>
 
                 <h3 style={styles.sectionTitle}>1. Introduction</h3>
                 <p style={styles.paragraph}>
-                  Welcome to [Your Company Name]. We respect your privacy and are committed to protecting your personal data.
+                  Welcome to Rebuild. We respect your privacy and are committed to protecting your personal data.
                   This Privacy Policy outlines how we collect, use, and safeguard your information.
                 </p>
 
@@ -87,7 +87,7 @@ const PrivacyPolicy = () => {
 
                 <h3 style={styles.sectionTitle}>7. Contact Us</h3>
                 <p style={styles.paragraph}>
-                  If you have any questions about our Privacy Policy, please contact us at <strong>[Your Contact Email]</strong>.
+                  If you have any questions about our Privacy Policy, please contact us at <strong>support@rebuild.lk</strong>.
                 </p>
 
                 <div style={styles.buttonContainer}>
